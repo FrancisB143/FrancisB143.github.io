@@ -1,118 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANGOY HTML</title>
+    <title>Bangoy Portfolio</title>
     <style>
         body {
-            background-color: #a9dce3;
-            padding: 0;
+            font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333333;
         }
-
-        .container{
-            width: 65%;
-            margin: auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-        }
-
-        p {
-            font-size: 20px;
-            margin-left: 5ch;
-            padding: 5px;
-        }
-
         header {
-            background-color: #1e88e5;
-            color: white;
-            padding: 20px;
+            background-color: #333333;
+            color: #fff;
+            padding: 15px;
             text-align: center;
         }
-
         header h1 {
             margin: 0;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 50px;
+            font-size: 40px;
         }
-
         nav {
-            background-color: #42a5f5;
-            padding: 10px;
-            text-align: center;
+            margin: 20px;
         }
-
         nav a {
-            color: white;
             margin: 15px;
+            color: #fff;
             text-decoration: none;
             font-size: 18px;
-            font-weight: bold;
         }
-
-        nav a:hover {
+        nav a:hover{
             text-decoration: underline;
         }
-
-        h2 {
-            background-color: #42a5f5;
-            padding: 10px;
-            border-radius: 8px;
+        .myPic {
+            display: block;
+            width: 250px;
+            margin: auto;
+            margin-top: 20px;
+            border: 3px solid #333333;
+            border-radius: 50%;
         }
-
-        a {
-            font-size: 20px;
+        .container {
+            width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .about, .favorites, .projects, .talents, .links, .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333333;
+            margin-top: 0;
+        }
+        h4{
+            margin-top: 10px;
+        }
+        .project {
+            background-color: #eae9e9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .project p{
+            font-size: 14px;
+        }
+        .ext{
             text-decoration: none;
             color: blue;
         }
-
         .ext:hover {
             color: black;
             text-decoration: underline;
         }
-
-        .myPic {
-            display: block;
-            width: 250px;
-            margin-left: auto;
-            margin-right: auto;
-            border: 3px solid #42a5f5;
-            border-radius: 50%;
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>My Portfolio</h1>
-        </header>
+    <header>
+        <h1>My Portfolio</h1>
         <nav>
-            <a href="#">About Me</a>
-            <a href="#">Favorites</a>
-            <a href="#">Projects</a>
-            <a href="#">Talents</a>
-            <a href="#">External Links</a>
+            <a href="#about">About Me</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#projects">Projects</a>
+            <a href="#talents">Talents</a>
+            <a href="#links">External Links</a>
         </nav>
-        <br>
-        <img class="myPic" src="me.jpg" alt="Profile Picture">
-        <br>
-        <h2>About Me:</h2> 
-        <p>I'm Francis Franklin Bangoy, an 18-year-old currently in my second year of studying Information Technology at the 
+    </header>
+    <img class="myPic" src="me.jpg" alt="Profile Picture">
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Francis Franklin Bangoy, an 18-year-old currently in my second year of studying Information Technology at the 
                 University of Immaculate Conception. I reside in Tandag City, Surigao Del Sur.</p>
-        <h2>Favorites:</h2> 
-        <p>My hobby is playing Online Games and Basketball.</p>
-        <h2>School Projects:</h2> 
-        <p>One of the main school projects we completed last year was developing a Barangay Management System using Javaswing.</p>
-        <h2>Talents:</h2> 
-        <p>At the moment, I haven't discovered what I'm particularly good at.</p>
-        <h2>External Links:</h2> 
-        <p>Github: <a target="_blank" href="https://github.com/FrancisB143" class="ext">Link to my Github Account</a></p>
-        <p>Facebook: <a target="_blank" href="https://www.facebook.com/francisfranklin.rizonbangoy" class="ext">
-                Link to my Facebook Account</a></p>
-        <p>Fashion Blog: <a target="_blank" href="https://francisb143.github.io/html/fashionblog/index.html" class="ext">Link to my Fashion Blog</a></p>
+        </section>
+        <section id="favorites" class="favorites">
+            <h2>Favorites</h2>
+            <p>Here are some of my favorite things to do:</p>
+            <ul>
+                <li>Playing Online Games</li>
+                <li>Playing Basketball</li>
+                <li>Coding</li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h4>Barangay Management System</h4>
+                <p>One of the main school projects we completed last year was developing a Barangay Management System using Javaswing.</p>
+            </div>
+        </section>
+        <section id="talents" class="talents">
+            <h2>Talents</h2>
+            <p>At the moment, I haven't discovered what I'm particularly good at.</p>
+        </section>
+        <section id="links" class="links">
+            <h2>External Links</h2>
+            <p>You can connect with me on these platforms:</p>
+                <p>Github: <a target="_blank" href="https://github.com/FrancisB143" class="ext">Link to my Github Account</a></p>
+                <p>Facebook: <a target="_blank" href="https://www.facebook.com/francisfranklin.rizonbangoy" class="ext">
+                    Link to my Facebook Account</a></p>
+                <p>Fashion Blog: <a target="_blank" href="https://francisb143.github.io/html/fashionblog/index.html" class="ext">
+                    Link to my Fashion Blog</a></p>
+        </section>
     </div>
 </body>
 </html>
