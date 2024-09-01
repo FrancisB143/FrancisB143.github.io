@@ -47,7 +47,7 @@
             margin: auto;
             padding: 20px;
         }
-        .about, .favorites, .projects, .talents, .links, .learnings {
+        .about, .favorites, .projects, .talents, .links, .extras, .contact {
             background-color: #fff;
             padding: 20px;
             margin-bottom: 20px;
@@ -59,11 +59,11 @@
             margin-top: 0;
         }
         h4{
-            margin-top: 10px;
+            margin-top: 0;
         }
         .project {
             background-color: #eae9e9;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 0 6px rgba(0,0,0,0.1);
             width: 300px;
@@ -79,6 +79,38 @@
             color: black;
             text-decoration: underline;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        #name, #email{
+            width: 250px;
+        }
+        #datetime{
+            width: 190px;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333333;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        button:hover {
+            background-color: #434242;
+        }
     </style>
 </head>
 <body>
@@ -90,7 +122,8 @@
             <a href="#projects">Projects</a>
             <a href="#talents">Talents</a>
             <a href="#links">External Links</a>
-            <a href="#learnings">Learnings</a>
+            <a href="#extras">Extras</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <img class="myPic" src="me.jpg" alt="Profile Picture">
@@ -107,6 +140,8 @@
                 <li>Playing Online Games</li>
                 <li>Playing Basketball</li>
                 <li>Coding</li>
+                <li>Programming</li>
+                <li>Developing</li>
             </ul>
         </section>
         <section id="projects" class="projects">
@@ -118,7 +153,7 @@
         </section>
         <section id="talents" class="talents">
             <h2>Talents</h2>
-            <p>At the moment, I haven't discovered what I'm particularly good at.</p>
+            <p>At the moment, I haven't discovered what I'm particularly good at but I love Coding and Editing.</p>
         </section>
         <section id="links" class="links">
             <h2>External Links</h2>
@@ -128,22 +163,13 @@
                     Link to my Facebook Account</a></p>
                 <p>Fashion Blog: <a target="_blank" href="https://francisb143.github.io/html/fashionblog/index.html" class="ext">
                     Link to my Fashion Blog</a></p>
-                <p>LinkedIn: <a target="_blank" href="www.linkedin.com/in/francis-franklin-bangoy-44872a325" class="ext">
+                <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/francis-franklin-bangoy-44872a325/" class="ext">
                         Link to my Linkedin Account</a></p>
         </section>
-        <section id="learnings" class="learnings">
-            <h2>Learnings</h2>
-            <p>Things that I've learned in this course:</p>
+        <section id="extras" class="extras">
+            <h2>Extras</h2>
             <ul>
-                <li>HTML5 Lists</li>
-                    <ul>
-                        <li>Unordered List</li>
-                    </ul>
-                    <ol>
-                        <li>Ordered List</li>
-                    </ol>
-                <br>
-                <li>HTML5 Table</li>
+                <li>HTML5 Logo</li>
                     <table border="1">
                         <tr>
                             <td colspan="2" style="background-color: red; width: 70px; height: 20px;"></td>
@@ -183,9 +209,27 @@
                             <td colspan="2" style="background-color: red; width: 70px; height: 20px;"></td>
                             <td colspan="2" style="background-color: orange; width: 70px; height: 20px;"></td>
                         </tr>
-                    </table>
-                    <br>
+                    </table><br>
+                <li>You can listen to this music when you're stressed.</li><br>
+                <audio controls autoplay>
+                    <source src="HowDeepIsYourLove.mp3" type="audio/mpeg">
+                    Your browser does not support this type of element. 
+                </audio>
             </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="datetime">Date & Time:</label>
+                <input type="datetime-local" id="datetime" name="datetime">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </div>
 </body>
