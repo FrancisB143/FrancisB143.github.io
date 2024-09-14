@@ -129,3 +129,56 @@ button {
 button:hover {
     background-color: #434242;
 }
+
+@media (max-width: 1239px) {
+    .myPic {
+        width: 200px;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .project {
+        width: 45%;
+    }
+
+    .about, .favorites, .projects, .talents, .links, .extras, .contact {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    .myPic{
+        width: 150px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+    .project {
+        width: 45%;
+    }
+
+    .about, .favorites, .projects, .talents, .links, .extras, .contact {
+        padding: 15px;
+    }
+}
