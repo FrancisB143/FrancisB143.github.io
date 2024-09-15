@@ -81,6 +81,16 @@ h4{
     font-size: 14px;
 }
 
+.project1{
+    width: 300px;
+    height: 200px;
+}
+
+.project:hover{
+    background-color: #d3d3d3;
+    transition: background-color 0.3s ease;
+}
+
 .ext{
     text-decoration: none;
     color: blue;
