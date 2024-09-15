@@ -10,16 +10,16 @@ body {
     color: #333333;
 }
 
-header {
-    background-color: #333333;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
+.myLogo{
+    width: 80px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
+header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 nav {
@@ -52,7 +52,7 @@ nav a:hover{
     padding: 20px;
 }
 
-.about, .favorites, .projects, .talents, .links, .extras, .contact {
+.about, .favorites, .projects, .talents, .links, .activities, .extras, .contact {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
@@ -89,6 +89,38 @@ h4{
 .ext:hover {
     color: black;
     text-decoration: underline;
+}
+
+.activity-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h3{
+    margin: 0;
+}
+
+.activity-card{
+    background-color: #eae9e9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    width: 250px;
+    height: 250px;
+}
+
+.activity-card:hover{
+    background-color: #d3d3d3;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.fashionblog, .healthy-recipes{
+    margin-top: 10px;
+    max-width: 100%;
+    height: 220px;
+    border-radius: 10px;
 }
 
 form {
@@ -138,10 +170,6 @@ button:hover {
     .container {
         width: 95%;
         padding: 10px;
-    }
-
-    .project {
-        width: 45%;
     }
 
     .about, .favorites, .projects, .talents, .links, .extras, .contact {
