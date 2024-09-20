@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangoy Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,14 +14,26 @@
             <a href="#about">About Me</a>
             <a href="#favorites">Favorites</a>
             <a href="#projects">Projects</a>
-            <a href="#talents">Talents</a>
-            <a href="#links">External Links</a>
-            <a href="#activities">Activities</a>
-            <a href="#extras">Extras</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <img class="myPic" src="images/me.jpg" alt="Profile Picture">
+    <div class="intro">
+        <img class="myPic" src="images/me.jpg" alt="Profile Picture">
+        <div class="introtext">
+            <p>Hello, I'm</p>
+            <h2>Francis Bangoy</h2>
+            <div class="buttons">
+                <a href="#" class="introbutton">Hire Me Please</a>
+                <a href="#" class="introbutton">Contact Me</a>
+            </div>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.facebook.com/francisfranklin.rizonbangoy"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/pran_seas/"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/francis-franklin-bangoy-44872a325/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/FrancisB143"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <section id="about" class="about">
             <h2>About Me</h2>
@@ -49,15 +62,6 @@
         <section id="talents" class="talents">
             <h2>Talents</h2>
             <p>At the moment, I haven't discovered what I'm particularly good at but I love Coding and Editing.</p>
-        </section>
-        <section id="links" class="links">
-            <h2>External Links</h2>
-            <p>You can connect with me on these platforms:</p>
-                <p>Github: <a target="_blank" href="https://github.com/FrancisB143" class="ext">Link to my Github Account</a></p>
-                <p>Facebook: <a target="_blank" href="https://www.facebook.com/francisfranklin.rizonbangoy" class="ext">
-                    Link to my Facebook Account</a></p>
-                <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/francis-franklin-bangoy-44872a325/" class="ext">
-                    Link to my Linkedin Account</a></p>
         </section>
         <section id="activities" class="activities">
             <h2>School Activities</h2>
@@ -122,7 +126,7 @@
                         </tr>
                     </table><br>
                 <li>You can listen to this music when you're stressed.</li><br>
-                <audio controls autoplay>
+                <audio controls>
                     <source src="HowDeepIsYourLove.mp3" type="audio/mpeg">
                     Your browser does not support this type of element. 
                 </audio>

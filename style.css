@@ -37,13 +37,66 @@ nav a:hover{
     text-decoration: underline;
 }
 
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 20px;
+    background-color: #fff;
+}
+
 .myPic {
     display: block;
-    width: 250px;
-    margin: auto;
-    margin-top: 20px;
+    width: 350px;
+    margin-right: 30px;
     border: 3px solid #333333;
     border-radius: 50%;
+}
+
+.introtext p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.introtext h2 {
+    margin: 5px 0;
+    font-size: 30px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.introbutton {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.introbutton:hover{
+    background-color: #555;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+    transition: color, font-size 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: #555;
+    font-size: 30px;
 }
 
 .container {
@@ -52,7 +105,7 @@ nav a:hover{
     padding: 20px;
 }
 
-.about, .favorites, .projects, .talents, .links, .activities, .extras, .contact {
+.about, .favorites, .projects, .talents, .activities, .extras, .contact {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
@@ -193,11 +246,28 @@ button:hover {
     }
 
     nav a {
+        margin: 10px;
         font-size: 17px;
     }
 
     .myPic{
         width: 150px;
+    }
+
+    .introbutton{
+        padding: 5px 10px;
+    }
+
+    .introtext p{
+        font-size: 20px;
+    }
+    
+    .introtext h2{
+        font-size: 25px;
+    }
+
+    .social-icons a{
+        font-size: 20px;
     }
 
     .container {
@@ -214,6 +284,10 @@ button:hover {
     }
     .project {
         width: 45%;
+    }
+    
+    .project1{
+        width: 100%;
     }
 
     .about, .favorites, .projects, .talents, .links, .extras, .contact {
