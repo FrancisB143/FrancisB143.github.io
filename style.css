@@ -34,21 +34,19 @@ nav a {
 
 nav a:hover{
     text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 .intro{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 250px 20px;
-    background-color: #fff;
+    padding: 130px 20px;
 }
 
 .myPic {
-    display: block;
     width: 350px;
     margin-right: 30px;
-    border: 3px solid #333333;
     border-radius: 50%;
 }
 
@@ -62,13 +60,12 @@ nav a:hover{
     font-size: 30px;
 }
 
-.buttons {
+.button {
     margin-top: 20px;
 }
 
 .introbutton {
     text-decoration: none;
-    margin-right: 10px;
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #000;
@@ -98,13 +95,69 @@ nav a:hover{
     font-size: 30px;
 }
 
+.about-me {
+    padding: 100px 20px;
+}
+
+.about-me h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.graduate-pic {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-right: 30px;
+}
+
+.info-section{
+    margin-top: 40px;
+}
+
+.info-boxes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.info-box i {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.description {
+    max-width: 600px;
+    margin: 30px auto;
+    color: #666;
+    line-height: 1.5;
+}
+
 .container {
     width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
-.about, .favorites, .projects, .talents, .activities, .extras, .contact {
+.favorites, .projects, .talents, .activities, .extras, .contact {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
@@ -228,9 +281,8 @@ button:hover {
     .myPic {
         width: 200px;
     }
-    
+
     .container {
-        width: 95%;
         padding: 10px;
     }
 
@@ -269,9 +321,26 @@ button:hover {
         font-size: 20px;
     }
 
+    .graduate-pic{
+        width: 240px;
+        height: 240px;
+    }
+
+    .info-box{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .about-me h1{
+        font-size: 26px;
+    }
+
+    .description{
+        font-size: 15px;
+    }
+
     .container {
         width: 95%;
-        padding: 10px;
     }
 
     h2{
