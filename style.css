@@ -248,7 +248,7 @@ h3{
     cursor: pointer;
 }
 
-.fashionblog, .healthy-recipes, .olivia-woodruff, .codecademy{
+.fashionblog, .healthy-recipes, .olivia-woodruff, .codecademy, .media-query{
     margin-top: 10px;
     max-width: 100%;
     height: 220px;
@@ -309,10 +309,6 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
-
     nav a {
         margin: 10px;
         font-size: 17px;
