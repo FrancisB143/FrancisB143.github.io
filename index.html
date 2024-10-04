@@ -11,15 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="#" class="myLogo">Francis</a>
-        <nav>
-            <a href="#about-me">About Me</a>
-            <a href="#favorites">Favorites</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <nav id="desktop-nav">
+        <div class="myLogo">Francis</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#favorites">Favorites</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact"  >Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="myLogo2">Francis</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
+                <li><a href="#favorites" onclick="toggleMenu()">Favorites</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
     <div class="intro">
         <img class="myPic" src="images/me.jpg" alt="Profile Picture">
         <div class="introtext">
@@ -186,5 +204,6 @@
             </form>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
