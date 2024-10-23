@@ -407,7 +407,7 @@ button:hover {
     }
 }
  
-/* BASE: IPAD PRO */
+/* BASED: IPAD MINI, AIR, AND PRO */
 @media all and (min-width: 768px) and (max-width: 1024px) { 
     nav {
         height: 150px;
@@ -415,8 +415,8 @@ button:hover {
 
     #hamburger-nav {
         justify-content: space-between;
-        margin-bottom: 3rem;
-        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 10px;
     }
 
     .myLogo2{
@@ -431,10 +431,11 @@ button:hover {
     .intro {
         justify-content: flex-start;
         flex-direction: column;
+        margin-bottom: 30rem;
     }
 
     .myPic{
-        width: 500px;
+        width: 450px;
         margin: 0;
     }
 
@@ -470,6 +471,10 @@ button:hover {
         font-size: 5rem;
     }
 
+    .about-me {
+        margin-bottom: 20rem;
+    }
+
     .intro-content {
         flex-direction: column;
     }
@@ -497,7 +502,7 @@ button:hover {
     }
 
     .description {
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
     }
 
@@ -540,7 +545,67 @@ button:hover {
     }
 }
  
-/* BASE: IPHONE SE */
+@media (min-width: 480px) and (max-width: 768px) {
+    .myPic {
+        width: 250px;
+        height: 250px;
+    }
+
+    .introtext p {
+        font-size: 20px;
+    }
+
+    .introtext h2 {
+        font-size: 30px;
+    }
+
+    .introbutton {
+        padding: 10px 15px;
+    }
+
+    .introtext i {
+        font-size: 25px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .about-me h1 {
+        font-size: 30px;
+    }
+
+    .graduate-pic {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .intro-content {
+        flex-direction: column;
+    }
+
+    .info-box {
+        padding: 8px;
+    }
+
+    .info-boxes {
+        justify-content: center;
+    }
+
+    .description {
+        font-size: 15px;
+        text-align: center;
+        width: 95%;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0;
+    }
+}
+
+/* BASED: IPHONE SE */
 @media all and (max-width: 480px) { 
     #hamburger-nav {
         display: flex;
