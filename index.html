@@ -16,7 +16,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about-me" class="nav-menu">About</a></li>
-                <li><a href="#favorites" class="nav-menu">Favorites</a></li>
+                <li><a href="#talent" class="nav-menu">Talents</a></li>
                 <li><a href="#projects" class="nav-menu">Projects</a></li>
                 <li><a href="#contact" class="nav-menu">Contact</a></li>
             </ul>
@@ -33,7 +33,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
-                <li><a href="#favorites" onclick="toggleMenu()">Favorites</a></li>
+                <li><a href="#talent" onclick="toggleMenu()">Talents</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -55,6 +55,7 @@
             </div>
         </div>
     </div>
+    
     <section class="about-me" id="about-me">
         <h1>About Me</h1>
         <div class="intro-content">
@@ -78,133 +79,198 @@
                     at the University of Immaculate Conception. I reside in Tandag City, Surigao Del Sur. </p>        
             </div>
         </div>
-        </section>
+    </section>
+
     <div class="container">
-        <section id="favorites" class="favorites">
-            <h2>Favorites</h2>
-            <p>Here are some of my favorite things to do:</p>
-            <ul>
-                <li>Playing Online Games</li>
-                <li>Playing Basketball</li>
-                <li>Coding</li>
-                <li>Programming</li>
-                <li>Developing</li>
-            </ul>
-        </section>
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h4>Barangay Management System</h4>
-                <p>One of the main school projects we completed last year was developing a Barangay Management System using Javaswing.</p>
-                <img src="images/1stProj.png" alt="Barangay Information System" class="project1">
+        
+        <div class="inner">
+            <div class="header" id="talent">
+                <h1>Talents/Skills</h1>
             </div>
-        </section>
-        <section id="talents" class="talents">
-            <h2>Talents</h2>
-            <p>At the moment, I haven't discovered what I'm particularly good at but I love Coding and Editing.</p>
-        </section>
-        <section id="activities" class="activities">
-            <h2>School Activities</h2>
-            <p>This is my activities in the past few weeks:</p>
-                <div class="activity-container">
-                    <div class="activity-card">
-                        <h3>Fashion Blog</h3>
-                        <a target="_blank" href="https://francisb143.github.io/html/fashionblog/index.html">
-                        <img src="images/fashionblog.png" alt="Fashion Blog" class="fashionblog">
-                        </a>
+            <div class="talent-cont">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <img src="images/html-icon.png" alt="" class="skill-icon">
+                        <h3>HTML</h3>
                     </div>
-                    <div class="activity-card">
-                        <h3>Healthy Recipes</h3>
-                        <a target="_blank" href="https://francisb143.github.io/html/healthy-recipes/index.html">
-                        <img src="images/healthy-recipes.png" alt="Healthy Recipes" class="healthy-recipes">
-                        </a>
+                    <p>HTML, or HyperText Markup Language, is the basic building block of websites. 
+                        It’s like the skeleton of a webpage, organizing content like text, images, and links so browsers can display them properly.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <img src="images/css-icon.png" alt="" class="skill-icon">
+                        <h3>CSS</h3>
                     </div>
-                    <div class="activity-card">
-                        <h3>Olivia Woodruff</h3>
-                        <a target="_blank" href="https://francisb143.github.io/html/olivia-woodruff-portfolio/index.html">
-                        <img src="images/olivia-woodruff.png" alt="Olivia Woodruff Portfolio" class="olivia-woodruff">
-                        </a>
+                    <p>CSS, or Cascading Style Sheets, is what makes a website look good. 
+                        It controls the design, like colors, fonts, layouts, and spacing, to make the webpage visually appealing.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <img src="images/javascript-icon.png" alt="" class="skill-icon">
+                        <h3>JavaScript</h3>
                     </div>
-                    <div class="activity-card">
-                        <h3>Learn CSS Codecademy</h3>
-                        <a target="_blank" href="https://www.codecademy.com/profiles/bit0520633729">
-                        <img src="images/codecademy.png" alt="Learn CSS Codecademy" class="codecademy">
-                        </a>
+                    <p>JavaScript is a programming language that makes websites interactive. 
+                        It adds features like buttons that respond when clicked, animations, and dynamic content updates to keep the site engaging.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <img src="images/java-icon.png" alt="" class="skill-icon">
+                        <h3>Java</h3>
                     </div>
-                    <div class="activity-card">
-                        <h3>Media Query</h3>
-                        <a target="_blank" href="https://francisb143.github.io/html/media-query/index.html">
-                        <img src="images/media-query.png" alt="Media Query" class="media-query">
-                        </a>
+                    <p>Java is a programming language used to build all kinds of software, from apps to websites and games. 
+                        It’s known for being reliable, versatile, and able to run on many different devices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h1>Work Experience</h1>
+            <div class="center-line"></div>
+            <div class="row row-1">
+                <section>
+                    <i class="icon fas fa-star"></i>
+                    <div class="details">
+                        <span class="title">Frontend Developer</span>
+                        <span class="date">June 2030 - Present</span>
+                    </div>
+                    <p>I’m a frontend developer, which means I build the parts of websites and apps that people see and use. 
+                        I work with tools like HTML, CSS, and JavaScript to create designs, buttons, and features that look good and work smoothly.</p>
+                    <a href="#">Read More</a>
+                </section>
+            </div>
+            <div class="row row-2">
+                <section>
+                    <i class="icon fas fa-star"></i>
+                    <div class="details">
+                        <span class="title">Web Developer</span>
+                        <span class="date">July 2029 - August 2030</span>
+                    </div>
+                    <p>I’m a web developer, and I create websites and web applications. 
+                        I handle everything from designing how it looks (frontend) to making sure it works behind the scenes (backend).</p>
+                    <a href="#">Read More</a>
+                </section>
+            </div>
+            <div class="row row-1">
+                <section>
+                    <i class="icon fas fa-star"></i>
+                    <div class="details">
+                        <span class="title">System Analyst</span>
+                        <span class="date">Sept 2028 - June 2029</span>
+                    </div>
+                    <p>I’m a system analyst, and I figure out how to improve computer systems for businesses. 
+                        I analyze their needs, design solutions, and ensure everything works efficiently and meets their goals.</p>
+                    <a href="#">Read More</a>
+                </section>
+            </div>
+            <div class="row row-2">
+                <section>
+                    <i class="icon fas fa-star"></i>
+                    <div class="details">
+                        <span class="title">Software Engineer</span>
+                        <span class="date">April 2027 - July 2028</span>
+                    </div>
+                    <p>I’m a software engineer, and I design and build software applications to solve problems or meet specific needs. 
+                        I use programming, testing, and problem-solving to create reliable and efficient software systems.</p>
+                    <a href="#">Read More</a>
+                </section>
+            </div>
+        </div>
+
+        <div class="project-sec" id="projects">
+            <h1>Projects</h1>
+        </div>
+        <div class="slider-box">
+            <div class="slider-controls">
+                <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+            </div>
+
+            <div class="container-slider">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="images/1stProj.png" alt="Barangay Information System">
+                    </div>
+                    <div class="slide">
+                        <img src="images/2ndProj.png" alt="UIC EchoNites">
                     </div>
                 </div>
-        </section>
-        <section id="extras" class="extras">
-            <h2>Extras</h2>
-            <ul>
-                <li>HTML5 Logo</li>
-                    <table border="1">
-                        <tr>
-                            <td colspan="2" style="background-color: red; width: 70px; height: 20px;"></td>
-                            <td colspan="2" style="background-color: orange; width: 70px; height: 20px;"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="1" style="background-color: red; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: white; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: white; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: orange; width: 35px; height: 20px;"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="1" style="background-color: red; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: white; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: orange; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: orange; width: 35px; height: 20px;"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="1" style="background-color: red; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: white; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: white; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: orange; width: 35px; height: 20px;"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="1" style="background-color: red; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: red; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: white; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: orange; width: 35px; height: 20px;"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="1" style="background-color: red; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: white; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: white; width: 35px; height: 20px;"></td>
-                            <td colspan="1" style="background-color: orange; width: 35px; height: 20px;"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="background-color: red; width: 70px; height: 20px;"></td>
-                            <td colspan="2" style="background-color: orange; width: 70px; height: 20px;"></td>
-                        </tr>
-                    </table><br>
-                <li>You can listen to this music when you're stressed.</li><br>
-                <audio controls>
-                    <source src="HowDeepIsYourLove.mp3" type="audio/mpeg">
-                    Your browser does not support this type of element. 
-                </audio>
-            </ul>
-        </section>
+            </div>
+
+            <div class="slider-controls">
+                <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <div class="activities">
+            <h1>School Activities</h1>
+            <div class="card-container">
+                <article class="card-article">
+                    <img src="images/fashionblog.png" alt="Fashion Blog" class="card-img">
+
+                    <div class="card-data">
+                        <h2 class="card-title">Fashion Blog</h2>
+                        <span class="card-description">This is my first activity</span>
+                        <a target="_blank" href="https://francisb143.github.io/html/fashionblog/index.html" class="card-button">Read More</a>
+                    </div>
+                </article>
+
+                <article class="card-article">
+                    <img src="images/healthy-recipes.png" alt="Healthy Recipes" class="card-img">
+
+                    <div class="card-data">
+                        <h2 class="card-title">Healthy Recipes</h2>
+                        <span class="card-description">This is my second activity</span>
+                        <a target="_blank" href="https://francisb143.github.io/html/healthy-recipes/index.html" class="card-button">Read More</a>
+                    </div>
+                </article>
+
+                <article class="card-article">
+                    <img src="images/olivia-woodruff.png" alt="Olivia Woodruff Portfolio" class="card-img">
+
+                    <div class="card-data">
+                        <h2 class="card-title">Codecademy</h2>
+                        <span class="card-description">This is my third activity</span>
+                        <a target="_blank" href="https://francisb143.github.io/html/olivia-woodruff-portfolio/index.html" class="card-button">Read More</a>
+                    </div>
+                </article>
+
+                <article class="card-article">
+                    <img src="images/codecademy.png" alt="Learn CSS Codecademy" class="card-img-codecademy">
+
+                    <div class="card-data">
+                        <h2 class="card-title">Codecademy</h2>
+                        <span class="card-description">This is my fourth activity</span>
+                        <a target="_blank" href="https://www.codecademy.com/profiles/bit0520633729" class="card-button">Read More</a>
+                    </div>
+                </article>
+
+                <article class="card-article">
+                    <img src="images/media-query.png" alt="Media Query" class="card-img">
+
+                    <div class="card-data">
+                        <h2 class="card-title">Media Query</h2>
+                        <span class="card-description">This is my fifth activity</span>
+                        <a target="_blank" href="https://francisb143.github.io/html/media-query/index.html" class="card-button">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
         <section id="contact" class="contact">
             <h2>Contact Me</h2>
-            <form action="">
+            <form action="" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" class="input-text">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" class="input-text">
                 <label for="datetime">Date & Time:</label>
-                <input type="datetime-local" id="datetime" name="datetime">
+                <input type="datetime-local" id="datetime" name="datetime" class="input-text">
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4"></textarea>
-                <button type="submit">Send</button>
+                <button type="submit" class="send-btn">Send</button>
             </form>
         </section>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
