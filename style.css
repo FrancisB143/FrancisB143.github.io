@@ -735,6 +735,45 @@ label {
     background-color: grey;
 }
 
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.intro {
+    animation: appear 1s forwards;
+}
+
+.about-me, .card-container {
+    animation: slide-in linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+
+.container h1, .talent-cont, .row-1, .row-2, .slider-box{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+
+
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480
    1280-1024   - desktop (default grid)
