@@ -890,6 +890,10 @@ label {
         width: 100%;
     }
 
+    .wrapper {
+        height: 100%;
+    }
+
     .wrapper .center-line {
         left: 40px;
     }
@@ -926,6 +930,15 @@ label {
 
     .row-1 section .icon {
         left: -60px;
+    }
+
+    .slider-box {
+        height: 800px;
+    }
+
+    .talent-cont {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
     }
 
     label, button, input{
@@ -1010,6 +1023,10 @@ label {
 
     .row-1 section .icon {
         left: -60px;
+    }
+
+    .talent-cont {
+        grid-template-columns: 1fr;
     }
 
     label, button, input{
@@ -1107,6 +1124,10 @@ label {
         height: 130px;
     }
 
+    .info-box h3 {
+        margin: 10px 0;
+    }
+
     .info-box p {
         margin-top: 8px;
         margin-bottom: 0;
@@ -1171,16 +1192,21 @@ label {
         font-size: 10px;
     }
 
-    .wrapper h1 {
+    .container h1, .about-me h1 {
         font-size: 25px;
     }
-    
-    h1 {
-        font-size: 25px;
-    }
-    
+
     .card-img, .card-img-codecademy {
         width: 100%;
+    }
+    
+    .talent-cont {
+        grid-template-columns: 1fr;
+        padding: 16px 50px;
+    }
+
+    .container-slider {
+        height: 350px;
     }
 
     label, button, input{
