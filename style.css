@@ -305,20 +305,6 @@ h2 {
 .header {
     text-align: center;
     color: var(--secondary-color);
-    padding: 1rem;
-    position: relative;
-}
-
-.header:after {
-    position: absolute;
-    content: '';
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 100px;
-    background-color: var(--secondary-color);
-    border-radius: 2px;
 }
 
 .talent-cont {
@@ -735,6 +721,7 @@ label {
     background-color: grey;
 }
 
+/* Animation */
 @keyframes slide-in {
     from {
         opacity: 0;
@@ -820,7 +807,8 @@ label {
     .intro {
         justify-content: flex-start;
         flex-direction: column;
-        margin-bottom: 30rem;
+        margin-bottom: 20rem;
+        height: 100%;
     }
 
     .myPic{
@@ -861,7 +849,7 @@ label {
     }
 
     .about-me {
-        margin-bottom: 20rem;
+        height: 100%;
     }
 
     .intro-content {
@@ -931,6 +919,7 @@ label {
 
     .wrapper {
         height: 100%;
+        margin-bottom: 10rem;
     }
 
     .wrapper .center-line {
@@ -1189,6 +1178,10 @@ label {
 
     .project1 {
         width: 100%;
+    }
+
+    .wrapper {
+        height: 100%;
     }
     
     .wrapper .center-line {
