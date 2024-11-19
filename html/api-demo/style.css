@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.main-cont {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 4rem;
+}
+
+.movies-cont, .weather-cont, .food-cont {
+    margin-left: 5rem;
+}
+
+.movie-btn, .weather-btn, .food-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}

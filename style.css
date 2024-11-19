@@ -322,6 +322,7 @@ h2 {
     padding: 1rem;
     color: var(--secondary-color);
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-box p {
@@ -370,6 +371,11 @@ h2 {
     transform: translateY(-10px);
 }
 
+.skill-box:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .skill-title h3 {
     color: var(--secondary-color);
     margin: 0.5rem 0 0 0;
@@ -386,7 +392,7 @@ h2 {
 .wrapper {
     max-width: 1200px;
     height: 900px;
-    margin: 50px auto;
+    margin: 150px auto;
     padding: 20px;
     position: relative;
 }
@@ -733,6 +739,17 @@ label {
     }
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -745,7 +762,7 @@ label {
 }
 
 .intro {
-    animation: appear 1s forwards;
+    animation: fadeInUp 2s ease forwards;
 }
 
 .about-me, .card-container {
@@ -759,7 +776,6 @@ label {
     animation-timeline: view();
     animation-range: entry 0%;
 }
-
 
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480
@@ -1249,18 +1265,3 @@ label {
         width: 100%;
     }
 }
-
-    /* 
-    @media screen and (max-width: 990px) {
-        .talent-cont {
-            grid-template-columns: repeat(2, 1fr);
-            padding: 2rem 50px;
-        }
-    }
-
-    @media screen and (max-width: 650px) {
-        .talent-cont {
-            grid-template-columns: 1fr;
-        }
-    }
-    */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API Demo</title>
+</head>
+<body>
+
+    <h1>Bangoy API Demo</h1>
+  
+    <div class="main-cont">
+
+        <div class="movies-cont">
+            <button onclick="callAPImovies()" class="movie-btn">Fetch Movie</button>
+            <h2>Movie Details</h2>
+            <p><strong>ID:</strong> <span id="movie_id">--</span></p>
+            <p><strong>Title:</strong> <span id="movie_title">--</span></p>
+            <p><strong>Year:</strong> <span id="movie_year">--</span></p>
+            <p><strong>Poster:</strong> <div id="movie_poster">--</div></p>
+        </div>
+
+        <div class="weather-cont">
+            <button onclick="callAPIweather()" class="weather-btn">Fetch Weather Data</button>
+            <h2>Weather Details</h2>
+            <p><strong>City:</strong> <span id="weather_city">--</span></p>
+            <p><strong>Temperature:</strong> <span id="weather_temperature">--</span></p>
+            <p><strong>Condition:</strong> <span id="weather_condition">--</span></p>
+        </div>
+
+        <div class="food-cont">
+            <button onclick="fetchRandomMeal()" class="food-btn">Get Random Meal</button>
+            <div id="meal-container">
+                <p>Click the button to get a random meal recipe.</p>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
