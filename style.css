@@ -772,7 +772,7 @@ label {
     animation-range: entry 0%;
 }
 
-.container h1, .talent-cont, .row-1, .row-2, .slider-box{
+.container h1, .talent-cont, .row-1, .row-2, .project-sec {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0%;
