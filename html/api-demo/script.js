@@ -1,17 +1,54 @@
-const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=b30aaa20';
+const API_URL = 'https://www.omdbapi.com/?apikey=b30aaa20';
 
-function callAPImovies() {
-    fetch(API_URL)
-      .then(response => response.json())
-      .then(json => {
-        console.log(json);
-        document.querySelector("#movie_id").innerHTML = json.imdbID || 'N/A';
-        document.querySelector("#movie_title").innerHTML = json.Title || 'N/A';
-        document.querySelector("#movie_year").innerHTML = json.Year || 'N/A';
-        document.querySelector("#movie_poster").innerHTML = `<img src="${json.Poster || 'N/A'}" />`;
-      })
-      .catch(error => console.error('Error fetching the API:', error));
-}
+    // Fetch movie by IMDb ID (example)
+    function callAPImovies() {
+      const movieId = 'tt3896198';
+      const url = `${API_URL}&i=${movieId}`;
+
+      fetch(url)
+        .then(response => response.json())
+        .then(json => {
+          console.log(json);
+          document.querySelector("#movie_id").innerHTML = json.imdbID || 'N/A';
+          document.querySelector("#movie_title").innerHTML = json.Title || 'N/A';
+          document.querySelector("#movie_year").innerHTML = json.Year || 'N/A';
+          document.querySelector("#movie_poster").innerHTML = `<img src="${json.Poster || 'N/A'}" />`;
+        })
+        .catch(error => console.error('Error fetching the API:', error));
+    }
+
+    function getTopMovies() {
+      const searchQuery = 'action'; 
+      const type = 'movie';  
+    
+      const url = `${API_URL}&s=${searchQuery}&type=${type}`;
+
+      fetch(url)
+        .then(response => response.json())
+        .then(json => {
+          if (json.Response === "True") {
+            const sortedMovies = json.Search.sort((a, b) => parseFloat(b.imdbRating) - parseFloat(a.imdbRating));
+            
+            const topMovies = sortedMovies.slice(0, 10);
+
+            let movieListHtml = '';
+            topMovies.forEach((movie, index) => {
+              movieListHtml += `
+                <div>
+                  <h3>${index + 1}. ${movie.Title} (${movie.Year})</h3>
+                  <p><strong>IMDb Rating:</strong> ${movie.imdbRating}</p>
+                  <img src="${movie.Poster}" alt="${movie.Title} Poster" style="width: 150px;">
+                </div>
+              `;
+            });
+
+            document.querySelector("#movie_list").innerHTML = movieListHtml;
+          } else {
+            console.error('Error fetching movies:', json.Error);
+          }
+        })
+        .catch(error => console.error('Error fetching the API:', error));
+    }
 
 const apiKey = 'cbb0b276f1724b6fb1420151241811';
 // Change this to the city you want to search

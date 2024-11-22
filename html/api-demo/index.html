@@ -13,12 +13,10 @@
     <div class="main-cont">
 
         <div class="movies-cont">
-            <button onclick="callAPImovies()" class="movie-btn">Fetch Movie</button>
-            <h2>Movie Details</h2>
-            <p><strong>ID:</strong> <span id="movie_id">--</span></p>
-            <p><strong>Title:</strong> <span id="movie_title">--</span></p>
-            <p><strong>Year:</strong> <span id="movie_year">--</span></p>
-            <p><strong>Poster:</strong> <div id="movie_poster">--</div></p>
+            <button onclick="getTopMovies()" class="movie-btn">Fetch Top 10 Movies</button>
+            <div class="movie-list" id="movie_list">
+
+            </div>
         </div>
 
         <div class="weather-cont">
